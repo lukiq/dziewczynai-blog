@@ -7,7 +7,7 @@ define('BLOG_SITE_URL', home_url());
 if(defined('ENVIRONMENT') && ENVIRONMENT=='dev')
 	define('MEDIA_DATE', time());
 else
-	define('MEDIA_DATE', strtotime('2013-08-14 20:00'));
+	define('MEDIA_DATE', strtotime('2013-08-14 23:15'));
 
 
 if(defined('ENVIRONMENT') && ENVIRONMENT=='dev')
@@ -146,5 +146,39 @@ function admin_excerpt()
     echo "</style>";
 }
 add_action('admin_head', 'admin_excerpt');
+
+function the_translateDate($return=false)
+{
+	$date = get_the_time('l-d-m 00:00');
+	$strtime =  strtotime($date);
+	
+	$find = array(
+		"MONDAY",
+		"TUESDAY",
+		"WEDNESDAY",
+		"THURSDAY",
+		"FRIDAY",
+		"SATURDAY",
+		"SUNDAY"
+	);
+	
+	$replace = array(
+		"PONIEDZIAłEK",
+		"WTOREK",
+		"ŚRODA",
+		"CZWARTEK",
+		"PIĄTEK",
+		"SOBOTA",
+		"NIEDZIELA"
+	);
+	
+	$newDate = str_ireplace($find, $replace, date("l, d.m", $strtime));
+	
+	if($return)
+		return $newDate; 
+	else
+		echo $newDate;
+	
+}
 
 ?>

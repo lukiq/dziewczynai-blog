@@ -7,14 +7,7 @@
 
 				<div <?php post_class() ?> id="post-<?php the_ID(); ?>">
 
-					<div class="date"><?php
-					
-					$date = get_the_time('l-d-m 00:00');
-					$strtime =  strtotime($date);
-					echo date("l, d.m", $strtime);
-					
-					
-					?></div>
+					<div class="date"><?php the_translateDate(); ?></div>
 
 					<h2 class="title"><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
 
