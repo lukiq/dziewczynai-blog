@@ -1,7 +1,7 @@
 <?php
 
 define('THEME_URL', (str_replace("http://", "//", get_bloginfo('template_url'))));
-define('BLOG_SITE_URL', site_url());
+define('BLOG_SITE_URL', home_url());
 
 // Constants
 if(defined('ENVIRONMENT') && ENVIRONMENT=='dev')
