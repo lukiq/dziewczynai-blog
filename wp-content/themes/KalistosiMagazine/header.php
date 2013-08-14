@@ -50,6 +50,7 @@ wp_head(); ?>
 		<div class="top_layer">&nbsp;</div>
 		<div id="topwrap">
 			<div id="header">
+				<?php require_once 'facebook.php'; ?>
 				<div id="blogtitle">
 					<h1>
 						<a href="<?php echo get_option('home'); ?>/">
