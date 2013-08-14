@@ -1,4 +1,7 @@
 <?php
+
+$optionsPages = array();
+
 /*
 Plugin Name: WP-PageNavi
 Plugin URI: http://lesterchan.net/portfolio/programming/php/
@@ -58,12 +61,16 @@ function pagenavi_stylesheets() {
 ### Function: Page Navigation: Boxed Style Paging
 function wp_pagenavi($before = '', $after = '') {
 	global $wpdb, $wp_query;
+	global $optionsPages;
         pagenavi_init();
+		
 	if (!is_single()) {
 		$request = $wp_query->request;
 		$posts_per_page = intval(get_query_var('posts_per_page'));
 		$paged = intval(get_query_var('paged'));
-		$pagenavi_options = get_option('pagenavi_options');
+		//$pagenavi_options = get_option('pagenavi_options');
+		$pagenavi_options = $optionsPages;
+		
 		$numposts = $wp_query->found_posts;
 		$max_page = $wp_query->max_num_pages;
 		if(empty($paged) || $paged == 0) {
@@ -196,14 +203,18 @@ function n_round($num, $tonearest) {
 ### Function: Page Navigation Options
 add_action('activate_wp-pagenavi/wp-pagenavi.php', 'pagenavi_init');
 function pagenavi_init() {
+	
+	global $optionsPages;
+	
 	pagenavi_textdomain();
 	// Add Options
+	$pagenavi_options;
 	$pagenavi_options = array();
-	$pagenavi_options['pages_text'] = __('Page %CURRENT_PAGE% of %TOTAL_PAGES%','wp-pagenavi');
+	$pagenavi_options['pages_text'] = __('Strona %CURRENT_PAGE% z %TOTAL_PAGES%','wp-pagenavi');
 	$pagenavi_options['current_text'] = '%PAGE_NUMBER%';
 	$pagenavi_options['page_text'] = '%PAGE_NUMBER%';
-	$pagenavi_options['first_text'] = __('&laquo; First','wp-pagenavi');
-	$pagenavi_options['last_text'] = __('Last &raquo;','wp-pagenavi');
+	$pagenavi_options['first_text'] = __('&laquo; Pierwsza','wp-pagenavi');
+	$pagenavi_options['last_text'] = __('Ostatnia &raquo;','wp-pagenavi');
 	$pagenavi_options['next_text'] = __('&raquo;','wp-pagenavi');
 	$pagenavi_options['prev_text'] = __('&laquo;','wp-pagenavi');
 	$pagenavi_options['dotright_text'] = __('...','wp-pagenavi');
@@ -213,6 +224,7 @@ function pagenavi_init() {
 	$pagenavi_options['always_show'] = 0;
 	$pagenavi_options['num_larger_page_numbers'] = 3;
 	$pagenavi_options['larger_page_numbers_multiple'] = 10;
+	$optionsPages = $pagenavi_options;
 	add_option('pagenavi_options', $pagenavi_options, 'PageNavi Options');
 }
 ?>

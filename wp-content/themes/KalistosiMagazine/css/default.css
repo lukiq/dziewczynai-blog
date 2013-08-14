@@ -290,40 +290,6 @@ p.center {
 #contentwrap table td{padding:8px;border: 1px solid #ccc;}
 /* -------- END TABLES -------- */
 
-
-/* -------- PAGE NAVIGATION -------- */
-
-.wp-pagenavi{
-  clear:both;
-  margin:20px 0 20px;
-  background: url(../images/nav.png);
-  padding: 15px 9px;
-  display: inline;
-  font-family: 'DroidSansRegular';
-  font-size: 10px;
-  text-transform: uppercase;
-}
-.wp-pagenavi span.pages,.wp-pagenavi span.extend{
-  background: #ce444f;
-  color:#fff;
-  padding:9px 10px;
-  margin: 0 2px;
-}
-.wp-pagenavi a,.wp-pagenavi a:link,.wp-pagenavi a:visited{
-  background: #56ada4;
-  color:#fff;
-  padding:9px 10px;
-  text-decoration:none;
-  margin: 0 2px;
-}
-.wp-pagenavi span.current,.wp-pagenavi a:hover{
-  background: #ce444f;
-  color:#fff;
-  padding:9px 10px;
-  margin: 0 2px;
-}
-/* -------- END PAGE NAVIGATION -------- */
-
 /* -------- SUBSCRIPTION -------- */
 ul#topsoc {
   float: right;
