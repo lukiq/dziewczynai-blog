@@ -1,0 +1,39 @@
+.feat-cat-entry  {
+  font-size: 12px;
+  padding: 0 !important;
+}
+.feat-cat-meta {
+	clear: both;
+	height: auto;
+	width: auto;
+	display: block;
+	margin: 0px 0 10px 0;
+    overflow: hidden;
+}
+.fi {
+  border: 1px solid #56ada4;
+  padding: 0px;
+  margin: 2px 15px 0 0 !important;
+}
+.feat-cat-meta h4 {
+  margin: 0px 0 0 0;
+  font-weight: normal;
+}
+.feat-cat-meta h4 a, .feat-cat-meta h4 a:visited {
+  color: #56ada4;
+  font-size: 10px;
+  text-transform: uppercase;
+}
+.feat-cat-meta p {
+  line-height: 16px;
+  margin-top: 4px;
+  color: #a5a5a5;
+  font-size: 11px;
+}
+a.fcomm, a.fcomm:visited {
+  color: #a5a5a5 !important;
+}
+.clearfix {
+  clear: both;
+}
+
