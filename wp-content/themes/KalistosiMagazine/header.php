@@ -47,16 +47,21 @@ wp_head(); ?>
 		<script type="text/javascript" src="<?php echo THEME_URL;?>/js/functions.js?<?php echo MEDIA_DATE; ?>"></script>
 	</head>
 	<body>
-		<div class="top_layer">&nbsp;</div>
+		<div class="top_layer">
+			<div id="blog_title">
+				<h1>
+					<a href="<?php echo get_option('home'); ?>/">
+						Zdrowe i kolorowe życie dziewczyny informatyka
+					</a>
+				</h1>
+			</div>
+			&nbsp;
+		</div>
 		<div id="topwrap">
 			<div id="header">
 				<?php require_once 'facebook.php'; ?>
-				<div id="blogtitle">
-					<h1>
-						<a href="<?php echo get_option('home'); ?>/">
-							Zdrowe i kolorowe życie dziewczyny informatyka
-						</a>
-					</h1>
+				<div id="blog_banner">
+					&nbsp;
 				</div>
 			</div>
 			<div id="top" class="menu_pattern">
