@@ -9,7 +9,10 @@
 
 					<div class="date"><?php
 					
-					echo get_the_time('l, d. m');
+					$date = get_the_time('l-d-m 00:00');
+					$strtime =  strtotime($date);
+					echo date("l, d.m", $strtime);
+					
 					
 					?></div>
 
