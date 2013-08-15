@@ -52,46 +52,54 @@
 
 <div id="footer1">
 <?php if ( function_exists('dynamic_sidebar') && dynamic_sidebar(2) ) : else : ?>
-
+<?php
+/*
     <div class="widget">
       <h3>Customer Service</h3>
       <ul>
       <?php wp_list_bookmarks('title_li=&categorize=0');  ?>
       </ul>
    </div>
-
+ * 
+ */
+?>
 
 <?php endif; ?>
 </div>
 
 <div id="footer2">
 <?php if ( function_exists('dynamic_sidebar') && dynamic_sidebar(3) ) : else : ?>
-
+<?php 
+/*
     <div class="widget">
     <h3>Informations</h3>
     <ul><?php wp_list_pages('title_li=&depth=1' ); ?></ul>
     </div>
-
+*/
+?>
 <?php endif; ?>
 </div>
 
 <div id="footer3">
 
 <?php if ( function_exists('dynamic_sidebar') && dynamic_sidebar(4) ) : else : ?>
-
+<?php
+/*
     <div class="widget">
       <h3>Extras</h3>
       <ul>
       <?php wp_list_bookmarks('title_li=&categorize=0');  ?>
       </ul>
    </div>
-
+*/
+?>
 <?php endif; ?>
 </div>
 
 <div id="footer4">
 <?php if ( function_exists('dynamic_sidebar') && dynamic_sidebar(5) ) : else : ?>
-
+<?php
+/*
     <div class="widget">
     <h3>Text Widget</h3>
     <p>
@@ -103,7 +111,8 @@ mentum non erat. Aliquam congue or
 nare varius.
     </p>
     </div>
-
+*/
+?>
 <?php endif; ?>
 </div>
 </div></div>

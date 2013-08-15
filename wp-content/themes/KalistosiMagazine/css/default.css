@@ -171,9 +171,9 @@ h1, h2, h3, h4, h5, h6 {
   width: 960px;
   clear: both;
   padding: 20px 0;
-  overflow: hidden;
   margin: 0 auto;
   color: #c5c5c5;
+  display: none;
 }
 #footer a, #footer a:visited {
   color: #c5c5c5;
