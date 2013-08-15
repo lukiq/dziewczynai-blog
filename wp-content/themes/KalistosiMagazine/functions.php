@@ -183,17 +183,24 @@ function the_translateDate($return=false)
 
 add_filter('get_archives_link', 'translate_archive_month');
 
-function translate_archive_month($list) {
-  $patterns = array(
-    '/January/', '/February/', '/March/', '/April/', '/May/', '/June/',
-    '/July/', '/August/', '/September/', '/October/',  '/November/', '/December/'
-  );
-  $replacements = array(
-    'Styczeń', 'Luty', 'Marzec', 'Kwiecień', 'Maj', 'Czerwiec', 
-    'Lipiec', 'Sierpień', 'Wrzesień', 'Październik', 'Listopad', 'Grudzień'
-  );    
-  $list = preg_replace($patterns, $replacements, $list);
-return $list; 
+function translate_archive_month($list) 
+{
+	$patterns = array(
+		'/January/', '/February/', '/March/', '/April/', '/May/', '/June/',
+		'/July/', '/August/', '/September/', '/October/',  '/November/', '/December/'
+	);
+	$replacements = array(
+		'Styczeń', 'Luty', 'Marzec', 'Kwiecień', 'Maj', 'Czerwiec', 
+		'Lipiec', 'Sierpień', 'Wrzesień', 'Październik', 'Listopad', 'Grudzień'
+	);    
+	return preg_replace($patterns, $replacements, $list);
+}
+
+add_action( 'init', 'my_custom_page_word' );
+function my_custom_page_word() 
+{
+	global $wp_rewrite;
+	$wp_rewrite->pagination_base = "strona";
 }
 
 ?>
