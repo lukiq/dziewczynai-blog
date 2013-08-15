@@ -25,9 +25,15 @@
 						</div>
 		<?php } ?>
 
-					<div class="entry">
+					<div class="entry excerpt">
+					<?php the_excerpt(''); ?>
+					<div class="more_link">
+						<a rel="nofollow" href="<?php the_permalink() ?>">czytaj więcej</a>
+					</div>
+				</div>
+<!--					<div class="entry">
 		<?php 
-		the_content('');  
+		//the_content('');  
 		/*?>
 						
 						<p><?php 
@@ -36,7 +42,7 @@
 						</p>
 						* 
 						*/?>
-					</div>
+					</div>-->
 					<?php
 					/*
 					<div class="meta">
