@@ -52,6 +52,9 @@ wp_head(); ?>
 		<script type="text/javascript" src="<?php echo THEME_URL;?>/js/functions.js?<?php echo MEDIA_DATE; ?>"></script>
 	</head>
 	<body>
+		<?php 
+		 require_once 'header/analyticstracking.php';
+		 ?>
 		<div class="top_layer">
 			<div id="blog_title">
 				<h1>
