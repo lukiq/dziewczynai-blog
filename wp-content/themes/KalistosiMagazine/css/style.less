@@ -69,7 +69,7 @@
 			padding: 4px 0px;
 			a
 			{
-				font-size: 0.72em;
+				font-size: 0.70em;
 				color: #fff;
 				padding: 0px;
 				display: block;
@@ -210,6 +210,8 @@
 
 	&.excerpt
 	{
+		height: 250px;
+		position: relative;
 		img
 		{
 			float: left;
@@ -219,8 +221,28 @@
 			margin-bottom: 15px;
 			float: right;
 			width: 330px;
+			text-align: justify;
 		}
-		
+		.more_link
+		{
+			position: absolute;
+			bottom: 0px;
+			right: 0px;
+			background-color: #b72e39;
+			a
+			{
+				color: #fff;
+				padding: 5px 15px;
+				display: block;
+				font-size: 10px;
+				font-family: Arial;
+				text-transform: uppercase;
+				&:hover
+				{
+					text-decoration: underline;
+				}
+			}
+		}
 	}
 }
 .post_thumbnail 
@@ -297,7 +319,7 @@ a.more-link {
   height: 1px;
   clear: both;
   overflow: hidden;
-  margin: 22px 0px 52px -20px !important;
+  margin: 22px 0px 52px 0px !important;
   display: inline-block;
 }
 

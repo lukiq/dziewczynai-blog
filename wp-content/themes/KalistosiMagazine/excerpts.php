@@ -9,7 +9,7 @@
 
                 <div class="date"><?php the_translateDate(); ?></div>
 
-				<h2 class="title"><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
+				<h2 class="title"><a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a></h2>
 
                 <div class="clearfix"></div>
 
@@ -23,6 +23,9 @@
 
 				<div class="entry excerpt">
 					<?php the_excerpt(''); ?>
+					<div class="more_link">
+						<a rel="nofollow" href="<?php the_permalink() ?>">czytaj więcej</a>
+					</div>
 				</div>
                 <div class="meta">
                  <?php 
