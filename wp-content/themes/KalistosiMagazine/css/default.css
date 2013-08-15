@@ -77,10 +77,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 5px 10px 0px 0px;
 }
 
-#contentwrap {
-  float: left;
-  width: 640px;
-}
+
 #sidebar {
   float: right;
   width: 300px;
@@ -282,13 +279,6 @@ p.center {
   margin: 10px 0;
 }
 /* -------- END WP STYLES -------- */
-
-
-
-/* -------- TABLES -------- */
-#contentwrap table{font-size:1.2em;margin:5px 0 25px 1px;}
-#contentwrap table td{padding:8px;border: 1px solid #ccc;}
-/* -------- END TABLES -------- */
 
 /* -------- SUBSCRIPTION -------- */
 ul#topsoc {

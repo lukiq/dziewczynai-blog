@@ -89,14 +89,14 @@ wp_head(); ?>
 							<?php
 							$categories = array(
 								"Sport",
+								"Odżywianie",
+								"Przepisy",
 								"Zdrowie",
 								"Uroda",
-								"Odżywianie",
-								"Moda",
 								"Lifestyle",
+								"Moda",
 								"Kultura",
-								"Motywacje",
-								"Przepisy"
+								"Motywacje"
 							);
 							foreach ($categories as $key => $value)
 							{
