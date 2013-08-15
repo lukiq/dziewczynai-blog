@@ -7,7 +7,7 @@ define('BLOG_SITE_URL', home_url());
 if(defined('ENVIRONMENT') && ENVIRONMENT=='dev')
 	define('MEDIA_DATE', time());
 else
-	define('MEDIA_DATE', strtotime('2013-08-15 23:20'));
+	define('MEDIA_DATE', strtotime('2013-08-15 23:50'));
 
 
 if(defined('ENVIRONMENT') && ENVIRONMENT=='dev')
@@ -179,6 +179,21 @@ function the_translateDate($return=false)
 	else
 		echo $newDate;
 	
+}
+
+add_filter('get_archives_link', 'translate_archive_month');
+
+function translate_archive_month($list) {
+  $patterns = array(
+    '/January/', '/February/', '/March/', '/April/', '/May/', '/June/',
+    '/July/', '/August/', '/September/', '/October/',  '/November/', '/December/'
+  );
+  $replacements = array(
+    'Styczeń', 'Luty', 'Marzec', 'Kwiecień', 'Maj', 'Czerwiec', 
+    'Lipiec', 'Sierpień', 'Wrzesień', 'Październik', 'Listopad', 'Grudzień'
+  );    
+  $list = preg_replace($patterns, $replacements, $list);
+return $list; 
 }
 
 ?>
