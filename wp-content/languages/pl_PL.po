@@ -3827,7 +3827,7 @@ msgstr "Anuluj pisanie odpowiedzi"
 
 #: wp-includes/comment-template.php:1637
 msgid "Post Comment"
-msgstr "Opublikuj komentarz"
+msgstr "Dodaj komentarz"
 
 #: wp-includes/comment.php:422
 msgid "Unapproved"
