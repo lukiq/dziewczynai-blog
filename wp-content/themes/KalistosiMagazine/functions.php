@@ -149,7 +149,7 @@ add_action('admin_head', 'admin_excerpt');
 
 function the_translateDate($return=false)
 {
-	$date = get_the_time('l-d-m 00:00');
+	$date = get_the_time('Y-m-d 00:00');
 	$strtime =  strtotime($date);
 	
 	$find = array(
