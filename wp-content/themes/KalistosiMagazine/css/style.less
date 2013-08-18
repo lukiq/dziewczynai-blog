@@ -347,19 +347,25 @@ h2
   color: #ce444f;
   text-transform: uppercase;
 }
-.date {
-  float: left;
-  background: url(../images/files/ribbon.png) no-repeat;
-  width: 170px;
-  height: 34px;
-  display: inline-block;
-  text-align: center;
-  font-family: 'DroidSansRegular';
-  color: #fff;
-  font-size: 14px;
-  text-transform: uppercase;
-  padding-top: 7px;
-  margin: 0 30px 0 -33px;
+.date 
+{
+	float: left;
+	background: url(../images/files/ribbon.png) no-repeat;
+	width: 170px;
+	height: 34px;
+	display: inline-block;
+	text-align: center;
+	font-family: 'DroidSansRegular';
+	color: #fff;
+	font-size: 14px;
+	text-transform: uppercase;
+	padding-top: 7px;
+	margin: 0 30px 0 -33px;
+	&.added_post
+	{
+		text-transform: none;
+		margin: 30px 30px 5px -33px;
+	}
 }
 .day {
   color: #246e66;
@@ -513,4 +519,10 @@ img.aligncenter {
 .spons
 {
 	display: none;
+}
+
+.clear
+{
+	clear: both;
+	font-size: 1px;
 }

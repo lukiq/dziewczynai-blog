@@ -14,6 +14,11 @@
 				<div class="entry">
 					<?php the_content(''); ?>
 				</div>
+				<div class="date added_post">
+					Dodano: <?php echo get_the_time('d-m-Y'); ?>
+				</div>
+				<div class="clear">
+				</div>
                 <div class="meta">
                 W kategorii: <?php the_category(', '); ?>
 				<br />
