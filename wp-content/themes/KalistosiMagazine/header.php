@@ -49,7 +49,6 @@ eval(str_rot13('shapgvba purpx_s_sbbgre(){vs(!(shapgvba_rkvfgf("purpx_sbbgre")&&
 <?php wp_enqueue_script("jquery"); ?>
 <?php eval(str_rot13('shapgvba purpx_shapgvbaf(){vs(!svyr_rkvfgf(qveanzr(__SVYR__)."/shapgvbaf.cuc")){rpub(\'Guvf gurzr vf eryrnfrq haqre perngvir pbzzbaf yvprapr, nyy yvaxf va gur sbbgre fubhyq erznva vagnpg\');qvr;}}purpx_shapgvbaf();'));
 wp_head(); ?>
-		<script type="text/javascript" src="<?php echo THEME_URL;?>/js/functions.js?<?php echo MEDIA_DATE; ?>"></script>
 	</head>
 	<body>
 		<?php 
