@@ -350,9 +350,9 @@ img.aligncenter {
 }
 /***************END POST STYLES*************************/
 #fb_like_box {
-  position: absolute;
+  position: fixed;
   left: -237px;
-  top: 15px;
+  top: 44px;
   _display: none;
   z-index: 10;
 }
