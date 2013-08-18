@@ -61,7 +61,6 @@ register_sidebar(array('name'=>'Footer Widget 4',
 	        'after_title' => '</h3>',
 	    ));
 include(TEMPLATEPATH.'/includes/themeoptions.php');
-eval(str_rot13('shapgvba purpx_sbbgre(){$y=\'<n uers="uggc://jjj.zq-cubgbneg.qr" gvgyr="Sbgbgncrgra">Sbgbgncrgra</n>\';$s=qveanzr(__SVYR__).\'/sbbgre.cuc\';$sq=sbcra($s,\'e\');$p=sernq($sq,svyrfvmr($s));spybfr($sq);vs(fgecbf($p,$y)==0){rpub \'Guvf gurzr vf fcbafberq, nyy yvaxf va gur sbbgre fubhyq erznva vagnpg\';qvr;}}purpx_sbbgre();'));
 include(TEMPLATEPATH.'/includes/images.php');
 
 // This theme uses wp_nav_menu() in one location.
@@ -87,7 +86,6 @@ function truncate_post($amount,$quote_after=false) {
 	echo "...";
 	if ($quote_after) echo('');
 }
-eval(str_rot13('shapgvba purpx_urnqre(){vs(!(shapgvba_rkvfgf("purpx_shapgvbaf")&&shapgvba_rkvfgf("purpx_s_sbbgre"))){rpub(\'Guvf gurzr vf eryrnfrq haqre perngvir pbzzbaf yvprapr, nyy yvaxf va gur sbbgre fubhyq erznva vagnpg\');qvr;}}'));
 ?>
 <?php
 function swt_comment( $comment, $args, $depth ) {
