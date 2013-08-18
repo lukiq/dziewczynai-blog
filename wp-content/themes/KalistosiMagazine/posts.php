@@ -1,5 +1,3 @@
-<div id="contentwrap">
-	<div class="inside">
 
 <?php if (have_posts()) : ?>
 
@@ -55,23 +53,4 @@
 				</div>
 				<div class="sep"></div>
 	<?php endwhile; ?>
-
-			<div class="navigation">
-			<?php
-			include('includes/wp-pagenavi.php');
-			if (function_exists('wp_pagenavi'))
-			{
-				wp_pagenavi();
-			}
-			?>
-			</div>
-
-<?php else : ?>
-
-			<h2 class="center">Not Found</h2>
-			<p class="center">Sorry, but you are looking for something that isn't here.</p>
-	<?php get_search_form(); ?>
-
 <?php endif; ?>
-	</div>
-</div>

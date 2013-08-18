@@ -203,4 +203,17 @@ function my_custom_page_word()
 	$wp_rewrite->pagination_base = "strona";
 }
 
+
+//add_theme_support( 'infinite-scroll', array(
+//    'type'  => 'click',
+//    'container'  => 'infinite-scroll-di',
+//    'footer'     => 'page',
+//    'render'     => 'render_di_posts',
+//) );
+//
+//
+//function render_di_posts() {  
+//    get_template_part( 'posts', 'standard' );  
+//}  
+
 ?>

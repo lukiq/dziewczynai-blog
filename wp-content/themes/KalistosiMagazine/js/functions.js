@@ -10,6 +10,7 @@ jQuery(document).ready(function( $ )
 		{
 			this.facebookLikeBox();
 			this.eucookie();
+			this.infiniteLoop();
 		},
 
 		facebookLikeBox: function()
@@ -44,6 +45,14 @@ jQuery(document).ready(function( $ )
 		eucookie: function()
 		{
 			EuCookie.init();
+		},
+		infiniteLoop: function()
+		{
+			
+			$( document.body ).on( 'post-load', function () {
+				// New posts have been added to the page.	
+				//console.log('new posts');
+			} );
 		}
 	}
 	
