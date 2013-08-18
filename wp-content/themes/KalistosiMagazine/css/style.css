@@ -157,6 +157,9 @@
 #sidebar ul li li {
   background-position: top right;
 }
+#sidebar ul li:last-child {
+  background: none;
+}
 #sidebar .about_me img {
   float: left;
 }
