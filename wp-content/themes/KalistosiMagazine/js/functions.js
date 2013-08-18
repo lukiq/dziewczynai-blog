@@ -51,7 +51,7 @@ jQuery(document).ready(function( $ )
 			
 			$( document.body ).on( 'post-load', function () {
 				// New posts have been added to the page.	
-				//console.log('new posts');
+				console.log('new posts');
 			} );
 		}
 	}
