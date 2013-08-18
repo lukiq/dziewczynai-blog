@@ -1,7 +1,16 @@
-<?php get_header();  
+<?php get_header(); ?>
 
- require_once 'excerpts.php';
+<div id="contentwrap">
+	<div class="inside" id="infinite-scroll-di">
 
+<?php 
+
+		require_once 'posts.php';
+?>
+	</div>
+	<?php require_once 'navigation.php';?>
+</div>
+<?php
 get_sidebar(); 
 get_footer(); 
 ?>
