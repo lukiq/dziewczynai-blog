@@ -426,9 +426,12 @@ img.aligncenter {
   margin: 10px 0px 30px 0px;
   font-size: 1.7em;
 }
-#contentwrap.archive-posts h1 {
+#contentwrap.archive-posts h1.pagetitle,
+#contentwrap.archive-posts h2.pagetitle {
   text-align: center;
   margin: 10px 20px 35px;
+  color: #a5a5a5;
+  font-size: 1.3em;
 }
 /* -------- TABLES -------- */
 #contentwrap table {
