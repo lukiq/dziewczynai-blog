@@ -12,6 +12,9 @@
 @import url("default.css");
 
 @import url(http://fonts.googleapis.com/css?family=Gabriela);
+#wpadminbar {
+  opacity: 0.8;
+}
 #topwrap {
   background: none;
   top: 1px;
