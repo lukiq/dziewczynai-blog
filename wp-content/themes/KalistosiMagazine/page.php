@@ -17,7 +17,7 @@
 			</div>
             <div class="sep"></div>
 
-            <?php comments_template(); ?>
+            <?php //comments_template(); ?>
 
 		<?php endwhile; ?>
 
