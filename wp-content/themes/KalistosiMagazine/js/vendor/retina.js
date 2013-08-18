@@ -1,4 +1,4 @@
-(function() {
+(function($) {
 
 	var root = (typeof exports == 'undefined' ? window : exports);
 
@@ -129,4 +129,4 @@
 		Retina.init(root);
 	}
 
-})();
+})(jQuery);

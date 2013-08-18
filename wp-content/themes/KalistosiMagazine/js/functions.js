@@ -1,4 +1,4 @@
-$(document).ready(function() {
+jQuery(document).ready(function( $ ) {
 
 	window.fbAsyncInit = function() {
 		FB.init({
