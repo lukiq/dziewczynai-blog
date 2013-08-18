@@ -6,7 +6,7 @@ var EuCookie = {
 	
 	init: function()
 	{
-		if ($.cookie("cookie_msg_eu_law") === null || 1)
+		if ($.cookie("cookie_msg_eu_law") === null)
 		{
 			EuCookie.appendScriptIpinfodb();
 		}
