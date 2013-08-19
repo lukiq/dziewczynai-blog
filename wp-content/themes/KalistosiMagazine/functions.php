@@ -7,7 +7,7 @@ define('BLOG_SITE_URL', home_url());
 if(defined('ENVIRONMENT') && ENVIRONMENT=='dev')
 	define('MEDIA_DATE', time());
 else
-	define('MEDIA_DATE', strtotime('2013-08-19 00:45'));
+	define('MEDIA_DATE', strtotime('2013-08-19 19:00'));
 
 
 if(defined('ENVIRONMENT') && ENVIRONMENT=='dev')

@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <div id="contentwrap">
-<div class="inside">
+<div class="inside page">
 
 	<?php if (have_posts()) : ?>
 
@@ -9,7 +9,7 @@
 
 			<div class="post" id="post-<?php the_ID(); ?>">
 
-				<h2 class="title"><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
+				<h1 class="title"><?php the_title(); ?></h1>
 
 				<div class="entry">
 					<?php the_content(''); ?>

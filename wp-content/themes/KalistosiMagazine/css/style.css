@@ -448,6 +448,11 @@ img.aligncenter {
   padding: 8px;
   border: 1px solid #ccc;
 }
+#contentwrap .inside.page h1 {
+  text-align: center;
+  color: black;
+  margin: 30px 0px;
+}
 /* -------- END TABLES -------- */
 .spons {
   display: none;
